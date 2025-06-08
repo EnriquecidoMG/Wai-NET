@@ -1,0 +1,51 @@
+﻿[Arrow]
+Path=Meyerholtian Normal Select.cur
+
+[Help]
+Path=Meyerholtian Help Select.cur
+
+[AppStarting]
+Path=Meyerholtian Working In Background.cur
+
+[Wait]
+Path=Meyerholtian Busy.cur
+
+[Crosshair]
+Path=Meyerholtian Precision Select.cur
+
+[IBeam]
+Path=Meyerholtian Text Select.cur
+
+[NWPen]
+Path=Meyerholtian Handwriting.cur
+
+[No]
+Path=Meyerholtian Unavailable.cur
+
+[SizeNS]
+Path=Meyerholtian Vertical Resize.cur
+
+[SizeWE]
+Path=Meyerholtian Horizontal Resize.cur
+
+[SizeNWSE]
+Path=Meyerholtian Diagonal Resize 1.cur
+
+[SizeNESW]
+Path=Meyerholtian Diagonal Resize 2.cur
+
+[SizeAll]
+Path=Meyerholtian Move.cur
+
+[UpArrow]
+Path=Meyerholtian Alternate Select.cur
+
+[Hand]
+Path=Meyerholtian Link Select.cur
+
+[Pin]
+Path=Meyerholtian Location Select.cur
+
+[Person]
+Path=Meyerholtian Person Select.cur
+

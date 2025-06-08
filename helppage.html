@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WaiNET</title>
+  <link id="stylesheet" rel="stylesheet" href="styles-dark.css">
+  <link id="favicon" rel="shortcut icon" href="resources/favicon-light.ico" type="image/x-icon">
+  <script>
+    // Función para cambiar el favicon según el tema
+    function cambiarTema() {
+      const favicon = document.getElementById('favicon');
+      const stylesheet = document.getElementById('stylesheet');
+      const logo = document.getElementById('thelogo');
+
+      // Verificamos si el navegador está en modo oscuro
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        favicon.href = 'resources/favicon-light.ico'; // Favicon para modo oscuro
+        stylesheet.href = 'styles-dark.css';
+        logo.href = 'Wainetlgover1white.png';
+      } else {
+        favicon.href = 'resources/favicon-black.ico'; // Favicon para modo claro
+        stylesheet.href = 'styles-light.css';
+        logo.href = 'Wainetlgover1.png';
+      }
+    }
+
+    // Llamamos a la función al cargar la página
+    window.onload = cambiarTema;
+
+    // También actualizamos el favicon si el usuario cambia el tema
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', cambiarTema);
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Mochiy+Pop+P+One&family=Rubik+Mono+One&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="/">
+        <!--<img id="thelogo" src="Wainetlgover1.png" alt="Zenless Zone Zero Logo">-->
+      </a>
+
+    </div>
+    <div class="header-container">
+      <!-- Logo -->
+
+
+      <!-- Menú de navegación -->
+
+      <nav class="nav-menu">
+        <ul>
+          <li>
+            <button class="cool-button" onclick="document.location='downloadpage.html'">
+              <div><span>Download</span></div>
+            </button>
+          </li>
+          <li>
+            <button class="menu-button" id="guide-button">
+              <div><span>Guide</span></div>
+            </button>
+          </li>
+          <li>
+            <button class="menu-button" id="help-button">
+              <div><span>Help</span></div>
+            </button>
+          </li>
+          <li><a href="https://github.com/EnriquecidoMG">
+              <button class="menu-button" id="github-button">
+                <div><span>GitHub</span></div>
+              </button></a>
+          </li>
+          <li>
+            <button class="menu-button" id="home-button" onclick="document.location='index.html'">
+              <div><span>Home</span></div>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+
+    </div>
+
+    <!-- Botón de acción -->
+    </div>
+
+  </header>
+  <main>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <section style="text-align: center; background-color: rgba(0, 0, 0, 0); box-shadow: none;">
+      <p style="font-family: Rubik Mono One; color: rgb(255, 252, 249); font-size: 60px;">HELP</p>
+      <div style="top: -60px; position: relative;">
+        <div class="three-body">
+          <div class="three-body__dot"></div>
+          <div class="three-body__dot"></div>
+          <div class="three-body__dot"></div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="parent">
+        <div class="div1">
+          <h2>Versión 1.2.0 - Módulo de Generación de Hashes</h2>
+          <p>¡Bienvenidos a la nueva actualización de nuestra aplicación! En esta versión, hemos añadido un nuevo y
+            potente <strong>módulo de generación de hashes</strong> que permitirá a los usuarios generar de manera
+            rápida y segura distintos tipos de valores hash para sus datos. Esta característica está especialmente
+            diseñada para mejorar la integridad y seguridad de la información.</p>
+
+          <h3>Novedades de esta versión:</h3>
+          <ul>
+            <li><strong>Generación de múltiples algoritmos hash</strong>: Soporta los algoritmos más utilizados, como
+              MD5, SHA-1, SHA-256, y SHA-512.</li>
+            <li><strong>Interfaz intuitiva</strong>: Un diseño sencillo y claro que permite a los usuarios generar
+              hashes en pocos pasos.</li>
+            <li><strong>Optimización de rendimiento</strong>: Hemos mejorado la velocidad de generación de hashes,
+              ofreciendo resultados casi instantáneos.</li>
+            <li><strong>Verificación de integridad</strong>: Capacidad para verificar la integridad de los datos
+              utilizando los valores hash generados, garantizando que no han sido alterados.</li>
+            <li><strong>Compatibilidad</strong>: Compatible con una amplia variedad de tipos de archivo y formatos de
+              entrada.</li>
+          </ul>
+
+          <p>Con este módulo, proporcionamos una herramienta indispensable para aquellos que buscan garantizar la
+            seguridad y autenticidad de sus archivos y datos. Ya sea para proteger contraseñas, verificar la integridad
+            de archivos o para usos más avanzados en desarrollo y seguridad, este módulo será esencial para tu flujo de
+            trabajo.</p>
+
+          <h3>Detalles y beneficios adicionales</h3>
+
+          <p>La nueva versión del módulo de generación de hashes no solo amplía la gama de algoritmos disponibles, sino
+            que también introduce optimizaciones que permiten un procesamiento mucho más rápido. Esto es crucial cuando
+            se manejan grandes volúmenes de datos, ya que reduce considerablemente el tiempo necesario para generar un
+            hash y asegura que el rendimiento de la aplicación no se vea afectado por el tamaño de los archivos o la
+            complejidad de los cálculos.</p>
+
+          <p>Con la integración de algoritmos como MD5, SHA-1, SHA-256 y SHA-512, este módulo proporciona flexibilidad
+            para aquellos que necesitan cumplir con estándares específicos de seguridad o que trabajan con tecnologías
+            que requieren uno de estos valores hash en particular. Mientras que MD5 y SHA-1 son ampliamente utilizados,
+            SHA-256 y SHA-512 ofrecen niveles superiores de seguridad, y por lo tanto, son esenciales para proteger
+            datos sensibles en entornos de alta seguridad.</p>
+
+          <h4>Generación de múltiples algoritmos hash</h4>
+          <p>Una de las principales ventajas de esta nueva funcionalidad es la posibilidad de elegir entre varios
+            algoritmos de hashing. Cada algoritmo tiene sus particularidades y aplicaciones ideales, dependiendo de la
+            naturaleza de los datos y del nivel de seguridad que se desea alcanzar. Por ejemplo:</p>
+          <ul>
+            <li><strong>MD5</strong>: Aunque es más rápido que otros algoritmos, se considera obsoleto para la
+              protección de datos sensibles debido a su vulnerabilidad frente a colisiones. Sin embargo, sigue siendo
+              útil en aplicaciones donde la velocidad y no la seguridad son lo más importante, como en la verificación
+              de integridad de archivos no sensibles.</li>
+            <li><strong>SHA-1</strong>: Aunque también se ha vuelto vulnerable frente a ataques de colisión, sigue
+              siendo adecuado en contextos donde se necesita una capa adicional de seguridad, pero no se requieren
+              algoritmos más robustos como SHA-256 o SHA-512.</li>
+            <li><strong>SHA-256</strong>: Es uno de los algoritmos más utilizados en la criptografía moderna,
+              especialmente recomendado cuando la seguridad es una prioridad, como en la protección de contraseñas o la
+              autenticación de datos.</li>
+            <li><strong>SHA-512</strong>: Este algoritmo proporciona aún mayor seguridad que SHA-256, generando un hash
+              de longitud mayor y resultando ideal para aplicaciones de alto nivel de seguridad, como en bancos,
+              servicios financieros o almacenamiento de datos muy sensibles.</li>
+          </ul>
+
+          <h4>Interfaz intuitiva</h4>
+          <p>La interfaz de usuario ha sido diseñada para ser tan sencilla como sea posible, lo que permite que
+            cualquier persona, sin importar su nivel de experiencia técnica, pueda generar un valor hash sin
+            complicaciones. Todo lo que necesitas hacer es elegir el archivo o los datos a los que deseas aplicar el
+            hash, seleccionar el algoritmo que prefieras y hacer clic en "Generar". Los resultados se mostrarán al
+            instante, con la opción de copiar el valor hash generado al portapapeles o exportarlo a un archivo.</p>
+
+          <h4>Optimización de rendimiento</h4>
+          <p>La velocidad es uno de los aspectos clave de esta actualización. En versiones anteriores, la generación de
+            hashes, especialmente con algoritmos más complejos como SHA-512, podía tomar más tiempo, lo que podría ser
+            un inconveniente cuando se trabaja con grandes volúmenes de datos. Ahora, con las mejoras de rendimiento
+            implementadas, los tiempos de espera se han reducido a su mínima expresión. Esto se debe a optimizaciones en
+            los algoritmos de cálculo y el procesamiento paralelo de datos, lo que asegura que incluso las operaciones
+            más complejas se realicen rápidamente, sin comprometer la precisión o seguridad de los resultados.</p>
+
+          <h4>Verificación de integridad</h4>
+          <p>Una de las aplicaciones más comunes de los valores hash es la verificación de integridad. Esta nueva
+            funcionalidad permite a los usuarios comprobar si los datos han sido modificados o corrompidos. Mediante el
+            uso de los hashes generados, puedes comparar los valores originales con los valores de archivos recibidos o
+            descargados para asegurarte de que no se ha producido ningún cambio no autorizado. Este proceso es esencial
+            en muchas industrias, como la distribución de software o la gestión de datos sensibles, ya que garantiza que
+            los archivos no han sido alterados durante la transferencia.</p>
+
+          <h4>Compatibilidad con una amplia variedad de tipos de archivo</h4>
+          <p>El módulo es completamente compatible con una gran variedad de formatos de archivo. Esto incluye, pero no
+            se limita a, documentos de texto, imágenes, archivos comprimidos, archivos de audio y vídeo, y muchos otros.
+            Esto significa que, independientemente del tipo de archivo con el que estés trabajando, podrás generar
+            fácilmente su valor hash y verificar su integridad. Además, se ha mejorado la capacidad del módulo para
+            manejar archivos grandes de manera eficiente, lo que asegura que los usuarios no tengan que preocuparse por
+            el tamaño del archivo al utilizar la herramienta.</p>
+
+          <h4>Casos de uso comunes</h4>
+          <p>Este módulo es ideal para una variedad de aplicaciones y casos de uso, tales como:</p>
+          <ul>
+            <li><strong>Protección de contraseñas</strong>: Generar hashes de contraseñas para almacenarlas de forma
+              segura en bases de datos sin comprometer la seguridad.</li>
+            <li><strong>Verificación de integridad de archivos</strong>: Comprobar que los archivos no han sido
+              alterados o corrompidos durante su transmisión.</li>
+            <li><strong>Seguridad en servicios de almacenamiento</strong>: Verificar la integridad de los datos
+              almacenados y garantizar que no hayan sido modificados sin autorización.</li>
+            <li><strong>Desarrollo de software</strong>: Utilizar hashes para gestionar las versiones de los archivos y
+              controlar el estado de los mismos durante el ciclo de vida del desarrollo.</li>
+            <li><strong>Autenticación de datos</strong>: Asegurar que los datos transmitidos entre sistemas sean
+              auténticos y no hayan sido manipulados en el camino.</li>
+          </ul>
+
+          <p>La integración de este módulo de generación de hashes en tu flujo de trabajo diario no solo mejorará la
+            seguridad, sino que también te proporcionará una herramienta versátil y eficiente para abordar una amplia
+            gama de desafíos relacionados con la integridad de los datos.</p>
+
+
+        </div>
+        <div class="div2">2</div>
+      </div>
+    </section>
+    <footer>
+
+    </footer>
+  </main>
+
+
+  <div class="container"></div>
+</body>
+
+</html>
+
+<!-- https://zenless.hoyoverse.com/_nuxt/img/logo.1e072ee.png -->

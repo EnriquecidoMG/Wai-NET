@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WaiNET</title>
+  <link id="stylesheet" rel="stylesheet" href="styles-dark.css">
+  <link id="favicon" rel="shortcut icon" href="resources/favicon-light.ico" type="image/x-icon">
+  <script>
+    // Función para cambiar el favicon según el tema
+    function cambiarTema() {
+      const favicon = document.getElementById('favicon');
+      const stylesheet = document.getElementById('stylesheet');
+      const logo = document.getElementById('thelogo');
+
+      // Verificamos si el navegador está en modo oscuro
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        favicon.href = 'resources/favicon-light.ico'; // Favicon para modo oscuro
+        stylesheet.href = 'styles-dark.css';
+        logo.href = 'Wainetlgover1white.png';
+      } else {
+        favicon.href = 'resources/favicon-black.ico'; // Favicon para modo claro
+        stylesheet.href = 'styles-light.css';
+        logo.href = 'Wainetlgover1.png';
+      }
+    }
+
+    // Llamamos a la función al cargar la página
+    window.onload = cambiarTema;
+
+    // También actualizamos el favicon si el usuario cambia el tema
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', cambiarTema);
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Mochiy+Pop+P+One&family=Rubik+Mono+One&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="/">
+        <!--<img id="thelogo" src="Wainetlgover1.png" alt="Zenless Zone Zero Logo">-->
+      </a>
+
+    </div>
+    <div class="header-container">
+      <!-- Logo -->
+
+
+      <!-- Menú de navegación -->
+
+      <nav class="nav-menu">
+        <ul>
+          <li>
+            <button class="cool-button" onclick="document.location='downloadpage.html'">
+              <div><span>Download</span></div>
+            </button>
+          </li>
+          <li>
+            <button class="menu-button" id="guide-button">
+              <div><span>Guide</span></div>
+            </button>
+          </li>
+          <li>
+            <button class="menu-button" id="help-button" onclick="document.location='helppage.html'">
+              <div><span>Help</span></div>
+            </button>
+          </li>
+          <li><a href="https://github.com/EnriquecidoMG">
+              <button class="menu-button" id="github-button">
+                <div><span>GitHub</span></div>
+              </button></a>
+          </li>
+          <li>
+            <button class="menu-button" id="home-button">
+              <div><span>Home</span></div>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+
+    </div>
+
+    <!-- Botón de acción -->
+    </div>
+
+  </header>
+  <main>
+    <br><br><br><br><br><br><br><br><br>
+    <section id="main-page">
+      <p id="logomaintext"></p>
+
+    </section>
+    
+
+  </main>
+
+  <div class="container"></div>
+</body>
+
+</html>
+
+<!-- https://zenless.hoyoverse.com/_nuxt/img/logo.1e072ee.png -->
