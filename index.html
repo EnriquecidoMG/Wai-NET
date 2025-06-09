@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WAINET</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <nav class="sidebar">
+      <div class="logo"> <img src="assets/logowhite.png" alt="" width="40px" style="position: relative;bottom: -10px;"> wainet</div>
+      <ul class="nav-menu">
+        <li><a href="#" class="nav-link" data-page="home">Home</a></li>
+        <li><a href="#" class="nav-link" data-page="pwned">Password Checker</a></li>
+        <li><a href="#" class="nav-link" data-page="urlscan">URL Scan</a></li>
+        <li><a href="#" class="nav-link" data-page="whois">WHOIS</a></li>
+        <li><a href="#" class="nav-link" data-page="password">Password Generator</a></li>
+        <li><a href="#" class="nav-link" data-page="metadata">Metainfo</a></li>
+        <li><a href="#" class="nav-link" data-page="hash">Hash Generator</a></li>
+      </ul>
+    </nav>
+
+    <main class="content-area">
+      <div id="home-page" class="page active">
+        <h1></h1>
+        <p></p>
+      </div>
+      
+      <!-- Las otras páginas se cargarán dinámicamente -->
+      <div id="page-container"></div>
+    </main>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

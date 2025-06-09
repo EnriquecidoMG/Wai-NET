@@ -1,0 +1,48 @@
+{
+  "name": "wainet",
+  "version": "0.2.1",
+  "description": "WAI-NET",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "build": "electron-builder"
+  },
+  "author": "Enrique Medina G.",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^36.4.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.enrimg.wainetapp",
+    "productName": "WAI-NET",
+    "files": [
+      "**/*",
+      "!dist/**/*",
+      "!**/*.md",
+      "!**/*.log",
+      "!src/",
+      "!test/",
+      "!webpack.config.js"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    },
+    "mac": {
+      "category": "public.app-category.utilities",
+      "icon": "assets/icon.icns"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "assets/icon.png"
+    }
+  },
+  "dependencies": {
+    "exif-js": "^2.3.0",
+    "pdf-lib": "^1.17.1",
+    "axios": "^1.9.0"
+  }
+}
